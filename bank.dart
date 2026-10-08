@@ -49,24 +49,24 @@ tarik(){
     stdout.write('Masukkan nominal yang akan ditarik tunai : ');
     int inputtariktunai = int.parse(stdin.readLineSync()!);
     //tanya user pecahan 50rb atau 100rb
-    stdout.write('Apakah anda ingin pecahan Rp.50000 atau Rp.100000');
+    stdout.write('Apakah anda ingin pecahan Rp.50000 atau Rp.100000 : ');
     int inputpecahantunai = int.parse(stdin.readLineSync()!);
     
     if (inputpecahantunai == 100000) {
-      inputpecahantunai = 100000;
-      var hitungpecah = inputtariktunai ~/ inputpecahantunai;
-      var hasilpecah = hitungpecah * inputpecahantunai;
-      var keluarantunai = saldo - hasilpecah;
-      print('Pecahan : $hitungpecah x $inputpecahantunai');
+        inputpecahantunai = 100000;
+        var hitungpecah = inputtariktunai ~/ inputpecahantunai;
+        var hasilpecah = hitungpecah * inputpecahantunai;
+        print('Pecahan 100rb : $hitungpecah x $inputpecahantunai');
 
 
     }else{
         inputpecahantunai = 50000;
+        var hitungpecah = inputtariktunai ~/ inputpecahantunai;
+        var hasilpecah = hitungpecah * inputpecahantunai;
+        print('Pecahan : $hitungpecah x $inputpecahantunai');
+        saldo = saldo - hasilpecah;
     }
     // ~/ => 250rb ~/ 100rb = bukan 2.5 tapi 2 
-    // if (inputpecahantunai == 100000) {
-    //   var hasilpecah = inputtariktunai ~/ inputpecahantunai; 
-    // }
 }
 
 //Menjalankan Coding
