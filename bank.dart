@@ -51,10 +51,15 @@ tarik(){
     //tanya user pecahan 50rb atau 100rb
     stdout.write('Apakah anda ingin pecahan Rp.50000 atau Rp.100000');
     int inputpecahantunai = int.parse(stdin.readLineSync()!);
+    
     if (inputpecahantunai == 100000) {
       inputpecahantunai = 100000;
-      var hasilpecah = inputtariktunai ~/ inputpecahantunai;
-      
+      var hitungpecah = inputtariktunai ~/ inputpecahantunai;
+      var hasilpecah = hitungpecah * inputpecahantunai;
+      var keluarantunai = saldo - hasilpecah 
+      print('Pecahan : $hitungpecah x $inputpecahantunai');
+
+
     }else{
         inputpecahantunai = 50000;
     }
