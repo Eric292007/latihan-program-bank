@@ -57,6 +57,7 @@ tarik(){
         var hitungpecah = inputtariktunai ~/ inputpecahantunai;
         var hasilpecah = hitungpecah * inputpecahantunai;
         print('Pecahan 100rb : $hitungpecah x $inputpecahantunai');
+        saldo = saldo - hasilpecah;
 
 
     }else{
